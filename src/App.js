@@ -30,10 +30,10 @@ function App() {
    //states do not work with if stetments and loops
    const substractedNumbers = number - thatNumber;
 
-   let conditionText;
-   substractedNumbers > 0
-      ? (conditionText = "Nažalost niste pogodili! Pokušajte sa MANJIM brojem!")
-      : (conditionText = "Nažalost niste pogodili! Pokušajte sa VEĆIM brojem!");
+   let conditionText =
+      substractedNumbers > 0
+         ? "Nažalost niste pogodili! Pokušajte sa MANJIM brojem!"
+         : "Nažalost niste pogodili! Pokušajte sa VEĆIM brojem!";
 
    const playGame = () => {
       setNumberArray([...numberArray, Number(number)]);
